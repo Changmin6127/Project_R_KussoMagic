@@ -11,11 +11,7 @@
 
     public partial class CoroutineManager : MonoBehaviour   //Property Function Field
     {
-        public void WaitForSecond(float time)
-        {
-            StartCoroutine(WaitForSecondsCoroutine(time));
-        }
-        public void WaitForSecond(System.Action receiveFunction, float time)
+        public void WaitForSecond_Action(System.Action receiveFunction, float time)
         {
             StartCoroutine(WaitForSecondsCoroutine(receiveFunction, time));
         }
@@ -25,19 +21,19 @@
     {
         IEnumerator WaitForSecondsCoroutine(System.Action receiveFunction, float time)
         {
-            yield return WaitForSeconds(time);
+            yield return WaitForSecond(time);
             receiveFunction?.Invoke();
         }
 
         IEnumerator WaitForSecondsCoroutine(float time)
         {
-            yield return WaitForSeconds(time);
+            yield return WaitForSecond(time);
         }
     }
 
     public partial class CoroutineManager : MonoBehaviour   //Assistance Function Field
     {
-        public WaitForSeconds WaitForSeconds(float time)
+        public WaitForSeconds WaitForSecond(float time)
         {
             WaitForSeconds waitForSeconds;
 
