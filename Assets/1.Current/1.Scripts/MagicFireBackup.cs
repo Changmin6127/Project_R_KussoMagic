@@ -5,7 +5,7 @@ using Anvil;
 
 public partial class MagicFireBackup : MonoBehaviour  //Data Field
 {
-    private GameObject 마법발사;
+    private GameObject magicFire;
 
     public Transform playerArm;
     public Transform playerHand;
@@ -63,17 +63,6 @@ public partial class MagicFireBackup : MonoBehaviour  //Main Function Field
             playerArm.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             playerArm.Rotate(Vector3.forward * 180);
 
-            if (playerArm.rotation.eulerAngles.z > 90.0f && playerArm.rotation.eulerAngles.z < 270.0f) //드래그일때만
-            {
-                rightHand.SetActive(true);
-                leftHand.SetActive(false);
-            }
-            else
-            {
-                leftHand.SetActive(true);
-                rightHand.SetActive(false);
-            }
-
             magicHandEffect.SetActive(false);
             isClick = false;
             playerArm.transform.localRotation = Quaternion.Euler(0, 0, 80);
@@ -82,7 +71,7 @@ public partial class MagicFireBackup : MonoBehaviour  //Main Function Field
 
             PlayerArmProgress();
 
-            if (Input.GetMouseButton(0)) //터치중일때
+            if (Input.GetMouseButton(0)) //??????????
                 LeftClickDrag();
         }
     }
@@ -99,7 +88,7 @@ public partial class MagicFireBackup : MonoBehaviour  //Property Function Field
 
     private void LeftClickDrag()
     {
-        if (마법발사.activeSelf == false)
+        if (magicFire.activeSelf == false)
         {
             magicHandEffect.SetActive(true);
         }
