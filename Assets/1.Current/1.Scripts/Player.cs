@@ -18,6 +18,12 @@ public partial class Player : MonoBehaviour  //Data Field
     private Transform playerHandTransform;
     [SerializeField]
     private GameObject magicHandEffect;
+    [SerializeField]
+    private MagicFire magicFire;
+    [SerializeField]
+    private Transform magicGuide;
+    [SerializeField]
+    private Transform magicGuideDestination;
 }
 
 public partial class Player : MonoBehaviour  //Main Function Field
@@ -40,7 +46,7 @@ public partial class Player : MonoBehaviour  //Main Function Field
         PlayerBodyDirection();
 
         if(isDrag)
-        PlayerArmRotation();
+            PlayerArmRotation();
     }
 }
 
@@ -48,9 +54,13 @@ public partial class Player : MonoBehaviour  //Property Function Field
 {
     private void LeftClickUp()
     {
+        magicFire.transform.position = magicGuide.position;
+        magicFire.transform.LookAt(magicGuideDestination);
+        magicFire.Active();
+
         magicHandEffect.SetActive(false);
         isDrag = false;
-        playerArmTransform.localRotation = Quaternion.Euler(0, 0, 80);
+        playerArmTransform.localRotation = Quaternion.Euler(-22.18f, -78.648f, -10.948f);
     }
 
     private void LeftClickDown()
@@ -65,17 +75,18 @@ public partial class Player : MonoBehaviour  //Property Function Field
         Vector3 dir = Input.mousePosition - pos;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         playerArmTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //playerArmTransform.Rotate(Vector3.forward * 180);
+
+        switch (playerDirection)
+        {
+            case Direction.Left: playerArmTransform.Rotate(new Vector3(0, 0f, 10f));  break;
+            case Direction.Right: playerArmTransform.Rotate(new Vector3(180f, 0f, 10f)); break;
+        }
     }
 
     private void PlayerBodyDirection()
     {
-        Vector2 mousePosition = Camera.main.WorldToScreenPoint(Input.mousePosition);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        Debug.Log("Mouse");
-        Debug.Log(mousePosition.x);
-        Debug.Log("Player");
-        Debug.Log(playerbodyTransform.position.x);
         switch (playerDirection)
         {
             case Direction.Left:
@@ -103,11 +114,12 @@ public partial class Player : MonoBehaviour  //Coroutine Function Field
     {
         while (isDie == false)
         {
-            yield return MainSystem.Instance.CoroutineManager.WaitForSecond(0.05f);
+            yield return new WaitForSeconds(0.05f);//MainSystem.Instance.CoroutineManager.WaitForSecond(0.05f);
             if (isDrag == true)
             {
-                float randomHandRotation = Random.Range(-10, 11);
-                playerHandTransform.localRotation = Quaternion.Euler(0, 0, randomHandRotation);
+                float randomHandRotation = Random.Range(-20, 20);
+                playerHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation);
+                Debug.Log(randomHandRotation);
             }
         }
     }
