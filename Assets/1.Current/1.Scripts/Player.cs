@@ -24,6 +24,10 @@ public partial class Player : MonoBehaviour  //Data Field
     private Transform magicGuide;
     [SerializeField]
     private Transform magicGuideDestination;
+    [SerializeField]
+    private Camera mainCamera;
+    [SerializeField]
+    private Camera magicCamera;
 }
 
 public partial class Player : MonoBehaviour  //Main Function Field
@@ -34,11 +38,14 @@ public partial class Player : MonoBehaviour  //Main Function Field
     }
     private void Update()
     {
-        if (isDie)
+        if (isDie || magicFire.isActive)
             return;
 
         if (Input.GetMouseButtonUp(0))
+        {
             LeftClickUp();
+            return;
+        }     
 
         if (Input.GetMouseButtonDown(0))
             LeftClickDown();
@@ -54,6 +61,8 @@ public partial class Player : MonoBehaviour  //Property Function Field
 {
     private void LeftClickUp()
     {
+        //magicCamera.gameObject.SetActive(true);
+        //mainCamera.gameObject.SetActive(false);
         magicFire.transform.position = magicGuide.position;
         magicFire.transform.LookAt(magicGuideDestination);
         magicFire.Active();
