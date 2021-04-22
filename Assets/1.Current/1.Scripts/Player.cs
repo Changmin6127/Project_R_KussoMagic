@@ -10,6 +10,9 @@ public partial class Player : MonoBehaviour  //Data Field
     private Direction playerDirection = Direction.Left;
     private bool isDie = false;
     private bool isDrag = false;
+    private bool isMagicReady = false;
+    private float deltaTime = 0;
+
     [SerializeField]
     private Transform playerbodyTransform;
     [SerializeField]
@@ -24,10 +27,6 @@ public partial class Player : MonoBehaviour  //Data Field
     private Transform magicGuide;
     [SerializeField]
     private Transform magicGuideDestination;
-    [SerializeField]
-    private Camera mainCamera;
-    [SerializeField]
-    private Camera magicCamera;
 }
 
 public partial class Player : MonoBehaviour  //Main Function Field
@@ -40,6 +39,9 @@ public partial class Player : MonoBehaviour  //Main Function Field
     {
         if (isDie || magicFire.isActive)
             return;
+        
+        if(isDrag)
+            Charge();
 
         if (Input.GetMouseButtonUp(0))
         {
@@ -59,13 +61,22 @@ public partial class Player : MonoBehaviour  //Main Function Field
 
 public partial class Player : MonoBehaviour  //Property Function Field
 {
+    private void Charge()
+    {
+        deltaTime += Time.deltaTime;
+
+        if(deltaTime > 1.0f)
+            isMagicReady = true;
+    }
     private void LeftClickUp()
     {
-        //magicCamera.gameObject.SetActive(true);
-        //mainCamera.gameObject.SetActive(false);
-        magicFire.transform.position = magicGuide.position;
-        magicFire.transform.LookAt(magicGuideDestination);
-        magicFire.Active();
+        if (isMagicReady)
+        {
+            isMagicReady = false;
+            magicFire.transform.position = magicGuide.position;
+            magicFire.transform.LookAt(magicGuideDestination);
+            magicFire.Active();
+        }
 
         magicHandEffect.SetActive(false);
         isDrag = false;
@@ -74,6 +85,8 @@ public partial class Player : MonoBehaviour  //Property Function Field
 
     private void LeftClickDown()
     {
+        isMagicReady = false;
+        deltaTime = 0;
         magicHandEffect.SetActive(true);
         isDrag = true;
     }
@@ -128,7 +141,6 @@ public partial class Player : MonoBehaviour  //Coroutine Function Field
             {
                 float randomHandRotation = Random.Range(-20, 20);
                 playerHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation);
-                Debug.Log(randomHandRotation);
             }
         }
     }

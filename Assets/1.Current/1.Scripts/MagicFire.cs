@@ -5,13 +5,22 @@ using UnityEngine;
 public partial class MagicFire : MonoBehaviour  //Date Field
 {
     public bool isActive { get; private set; } = false;
+    private int hitCount = 0;
 
+    [SerializeField]
+    private int endHitCount = 5;
     [SerializeField]
     private Rigidbody2D rig;
     [SerializeField]
     private Collider2D thisColloder;
     [SerializeField]
     private ParticleSystem particle;
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip hitClip;
+    [SerializeField]
+    private AudioClip fireClip;
 }
 
 public partial class MagicFire : MonoBehaviour  //Function Field
@@ -22,11 +31,14 @@ public partial class MagicFire : MonoBehaviour  //Function Field
     }
     public void Active()
     {
+        audioSource.PlayOneShot(fireClip);
+        hitCount = 0;
         isActive = true;
         thisColloder.enabled = true;
         particle.Play(true);
         rig.velocity = Vector3.zero;
-        rig.AddForce(transform.forward * 500);
+
+        rig.AddForce(transform.forward * 700);
     }
     public void Deactive()
     {
@@ -36,11 +48,12 @@ public partial class MagicFire : MonoBehaviour  //Function Field
         thisColloder.enabled = false;
     }
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Input.GetMouseButtonDown(1))
-        {
+        hitCount++;
+        if (hitCount >= endHitCount)
             Deactive();
-        }
+        else
+            audioSource.PlayOneShot(hitClip);
     }
 }
