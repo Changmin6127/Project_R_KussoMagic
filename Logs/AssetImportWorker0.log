@@ -12,182 +12,210 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49429
+49292
 Successfully changed project path to: /Users/yeonchangmin/Documents/UnityProject/Project_R_KussoMagic
 /Users/yeonchangmin/Documents/UnityProject/Project_R_KussoMagic
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 77.60 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 72.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path /Applications/UnityEditor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/yeonchangmin/Documents/UnityProject/Project_R_KussoMagic/Assets
 GfxDevice: creating device client; threaded=0
-2021-04-24 00:13:49.867 Unity[1410:23933] (null) preferred device: Apple M1 (high power)
-2021-04-24 00:13:49.867 Unity[1410:23933] Metal devices available: 1
-2021-04-24 00:13:49.867 Unity[1410:23933] 0: Apple M1 (high power)
-2021-04-24 00:13:49.867 Unity[1410:23933] Using device Apple M1 (high power)
+2021-04-24 10:48:49.831 Unity[642:10173] (null) preferred device: Apple M1 (high power)
+2021-04-24 10:48:49.831 Unity[642:10173] Metal devices available: 1
+2021-04-24 10:48:49.831 Unity[642:10173] 0: Apple M1 (high power)
+2021-04-24 10:48:49.832 Unity[642:10173] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Initialize mono
 Mono path[0] = '/Applications/UnityEditor/2020.3.4f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/UnityEditor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/UnityEditor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56410
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56642
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/UnityEditor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.002129 seconds.
+Registered in 0.001164 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 78.57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 76.08 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.423 seconds
+- Completed reload, in  2.712 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001252 seconds.
+Registered in 0.002084 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.731 seconds
+- Completed reload, in  1.766 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/UnityEditor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1421 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.7 MB.
-System memory in use after: 154.8 MB.
+System memory in use before: 154.8 MB.
+System memory in use after: 154.9 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1870.
-Total: 1.346375 ms (FindLiveObjects: 0.112833 ms CreateObjectMapping: 0.029417 ms MarkObjects: 1.120833 ms  DeleteObjects: 0.082375 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Fantasy Skybox FREE/Scenes
-  artifactKey: Guid(9d20d945c0685494ba906e939e1dd86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Scenes using Guid(9d20d945c0685494ba906e939e1dd86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a397782ac1cfc04c0c24c9637a67f7ec') in 0.006614 seconds
-  Import took 0.009168 seconds .
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1872.
+Total: 1.309417 ms (FindLiveObjects: 0.119458 ms CreateObjectMapping: 0.030416 ms MarkObjects: 1.083208 ms  DeleteObjects: 0.075458 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Fantasy Skybox FREE/Readme.txt
-  artifactKey: Guid(53399a9960b4d94419f1b8fa47c146b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Readme.txt using Guid(53399a9960b4d94419f1b8fa47c146b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5ed6ffbdb749d7780585d132c889a4') in 1.696453 seconds
-  Import took 1.698428 seconds .
+  path: Assets/1.Current/0.Scene/Stage_1.unity
+  artifactKey: Guid(2acae564c621440209a73f2de060a1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1.Current/0.Scene/Stage_1.unity using Guid(2acae564c621440209a73f2de060a1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f8e8421f3ac3fd3fbf3dc1c4f59979') in 0.021190 seconds
+  Import took 0.023716 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000301 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/Classic
-  artifactKey: Guid(69ee00d9176dabc4687615071b161c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/Classic using Guid(69ee00d9176dabc4687615071b161c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bacb53503181404b61e593e8bdee182') in 0.000560 seconds
-  Import took 0.002262 seconds .
+  path: Assets/1.Current/0.Scene
+  artifactKey: Guid(5a969f60ce0610a43b5794fad025e563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1.Current/0.Scene using Guid(5a969f60ce0610a43b5794fad025e563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00cbbaff25779a8c07bf1f29d3c3867') in 0.000699 seconds
+  Import took 0.002117 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials
-  artifactKey: Guid(e0454b514da2ecd429e000f40050d4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials using Guid(e0454b514da2ecd429e000f40050d4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25aa507eab6af068e0708f76279b6d7') in 0.000456 seconds
-  Import took 0.001732 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.683 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.7 MB.
+System memory in use after: 149.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1875.
+Total: 1.093625 ms (FindLiveObjects: 0.103875 ms CreateObjectMapping: 0.027708 ms MarkObjects: 0.939917 ms  DeleteObjects: 0.021375 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.261877 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/Classic/FS000_Day_01.png
-  artifactKey: Guid(1331a26d2843a1148a23d5ddc81629dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/Classic/FS000_Day_01.png using Guid(1331a26d2843a1148a23d5ddc81629dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270df109a34a9642914f17ce144590fb') in 0.650131 seconds
-  Import took 0.652235 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000725 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.743 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.1 MB.
+System memory in use after: 150.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1878.
+Total: 1.376333 ms (FindLiveObjects: 0.142584 ms CreateObjectMapping: 0.030166 ms MarkObjects: 1.182584 ms  DeleteObjects: 0.019875 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.009933 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/Classic/FS000_Day_01.png
-  artifactKey: Guid(1331a26d2843a1148a23d5ddc81629dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/Classic/FS000_Day_01.png using Guid(1331a26d2843a1148a23d5ddc81629dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270df109a34a9642914f17ce144590fb') in 0.026297 seconds
-  Import took 0.028566 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001108 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.651 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1881.
+Total: 1.151834 ms (FindLiveObjects: 0.094334 ms CreateObjectMapping: 0.030250 ms MarkObjects: 1.007542 ms  DeleteObjects: 0.018750 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 508.418374 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/Classic/FS000_Night_01.png
-  artifactKey: Guid(a64d2362d418d194f91274685fb10faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/Classic/FS000_Night_01.png using Guid(a64d2362d418d194f91274685fb10faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043c55595e1b4412cb581a46755b9e2b') in 0.023431 seconds
-  Import took 0.025950 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001041 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.807 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.9 MB.
+System memory in use after: 151.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1884.
+Total: 1.190709 ms (FindLiveObjects: 0.134958 ms CreateObjectMapping: 0.028042 ms MarkObjects: 1.004542 ms  DeleteObjects: 0.022250 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 21.545616 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS002
-  artifactKey: Guid(c862ef60191075042a6f4ac7dd6f19b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS002 using Guid(c862ef60191075042a6f4ac7dd6f19b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90773109c286f281ba44c737313a01ae') in 0.001065 seconds
-  Import took 0.004136 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000954 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.819 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.3 MB.
+System memory in use after: 151.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1887.
+Total: 1.099084 ms (FindLiveObjects: 0.112375 ms CreateObjectMapping: 0.027750 ms MarkObjects: 0.944833 ms  DeleteObjects: 0.013459 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 4.852046 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Day.png
-  artifactKey: Guid(90bac99dc822bf641b140cdc291b845e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Day.png using Guid(90bac99dc822bf641b140cdc291b845e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed94b327e6ec00e2892692a9c54e3e4') in 0.016967 seconds
-  Import took 0.019241 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000928 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.748 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.6 MB.
+System memory in use after: 151.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1890.
+Total: 1.236875 ms (FindLiveObjects: 0.167875 ms CreateObjectMapping: 0.028584 ms MarkObjects: 1.021125 ms  DeleteObjects: 0.018583 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.115595 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Day.png
-  artifactKey: Guid(90bac99dc822bf641b140cdc291b845e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Day.png using Guid(90bac99dc822bf641b140cdc291b845e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed94b327e6ec00e2892692a9c54e3e4') in 0.006913 seconds
-  Import took 0.009156 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000819 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.706 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1363 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.1 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.451313 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Day_Sunless.png
-  artifactKey: Guid(e2c576b6d07638b468b5ba303a3a07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Day_Sunless.png using Guid(e2c576b6d07638b468b5ba303a3a07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1e683e0dfd902ff30a1e8385f56c9c') in 0.008060 seconds
-  Import took 0.010686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.260230 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Night.png
-  artifactKey: Guid(3cf4d52b14bd4254d9f4fd063f8d9bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Night.png using Guid(3cf4d52b14bd4254d9f4fd063f8d9bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1569a1ffabffc458279207c18cd54e58') in 0.011505 seconds
-  Import took 0.015245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000704 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Night.png
-  artifactKey: Guid(3cf4d52b14bd4254d9f4fd063f8d9bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS002/FS002_Night.png using Guid(3cf4d52b14bd4254d9f4fd063f8d9bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1569a1ffabffc458279207c18cd54e58') in 0.008009 seconds
-  Import took 0.010394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.056061 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS003
-  artifactKey: Guid(19ee5fc36da208d45b86eb47e0f34cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS003 using Guid(19ee5fc36da208d45b86eb47e0f34cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401cd94fe61c347339f3d205bb328b71') in 0.001136 seconds
-  Import took 0.004186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.303651 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS013
-  artifactKey: Guid(f11fc5ca5a0603d4f96f98c92e7cb7f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS013 using Guid(f11fc5ca5a0603d4f96f98c92e7cb7f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c41d992284f38c9c6ed819ff3f89ff6') in 0.000848 seconds
-  Import took 0.003578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.428845 seconds.
-  path: Assets/Fantasy Skybox FREE/Materials/FS017
-  artifactKey: Guid(9ae9a043594a6d741a2956119b230b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Skybox FREE/Materials/FS017 using Guid(9ae9a043594a6d741a2956119b230b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83c73e4f4c823b8ff30fc0da0f6267d') in 0.001085 seconds
-  Import took 0.003973 seconds .
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1893.
+Total: 1.154458 ms (FindLiveObjects: 0.106209 ms CreateObjectMapping: 0.030250 ms MarkObjects: 0.999875 ms  DeleteObjects: 0.017084 ms)
 
