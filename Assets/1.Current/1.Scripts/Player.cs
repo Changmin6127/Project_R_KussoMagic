@@ -12,6 +12,8 @@ public partial class Player : MonoBehaviour  //Data Field
     private bool isDrag = false;
     private bool isMagicReady = false;
     private float deltaTime = 0;
+    private float chargyEnergy = 0;
+    private float maxHandRotation = 30;
 
     [SerializeField]
     private Transform playerbodyTransform;
@@ -66,7 +68,18 @@ public partial class Player : MonoBehaviour  //Property Function Field
         deltaTime += Time.deltaTime;
 
         if(deltaTime > 1.0f)
+        {
             isMagicReady = true;
+        }
+
+        if (chargyEnergy > 1)
+        {
+            chargyEnergy = 1;
+        }
+        else
+        {
+            chargyEnergy += Time.deltaTime * 0.3f;
+        }
     }
     private void LeftClickUp()
     {
@@ -75,7 +88,7 @@ public partial class Player : MonoBehaviour  //Property Function Field
             isMagicReady = false;
             magicFire.transform.position = magicGuide.position;
             magicFire.transform.LookAt(magicGuideDestination);
-            magicFire.Active();
+            magicFire.Active(chargyEnergy);
         }
 
         magicHandEffect.SetActive(false);
@@ -87,6 +100,7 @@ public partial class Player : MonoBehaviour  //Property Function Field
     {
         isMagicReady = false;
         deltaTime = 0;
+        chargyEnergy = 0;
         magicHandEffect.SetActive(true);
         isDrag = true;
     }
@@ -139,8 +153,8 @@ public partial class Player : MonoBehaviour  //Coroutine Function Field
             yield return new WaitForSeconds(0.05f);//MainSystem.Instance.CoroutineManager.WaitForSecond(0.05f);
             if (isDrag == true)
             {
-                float randomHandRotation = Random.Range(-20, 20);
-                playerHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation);
+                float randomHandRotation = Random.Range(-maxHandRotation, maxHandRotation);
+                playerHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation * chargyEnergy);
             }
         }
     }

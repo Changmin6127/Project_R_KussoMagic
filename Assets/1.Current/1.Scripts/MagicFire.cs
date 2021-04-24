@@ -6,6 +6,7 @@ public partial class MagicFire : MonoBehaviour  //Date Field
 {
     public bool isActive { get; private set; } = false;
     private int hitCount = 0;
+    private float addForce = 2000f;
 
     [SerializeField]
     private int endHitCount = 5;
@@ -31,7 +32,7 @@ public partial class MagicFire : MonoBehaviour  //Function Field
     {
         Deactive();
     }
-    public void Active()
+    public void Active(float _charge)
     {
         StartCoroutine(DeleteTime());
         audioSource.PlayOneShot(fireClip);
@@ -41,14 +42,14 @@ public partial class MagicFire : MonoBehaviour  //Function Field
         particle.Play(true);
         rig.velocity = Vector3.zero;
 
-        rig.AddForce(transform.forward * 70000);
+        rig.AddForce(transform.forward * (addForce * _charge));
     }
     public void Deactive()
     {
         StopAllCoroutines();
         isActive = false;
         rig.velocity = Vector3.zero;
-        particle.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        particle.Stop(true);
         thisColloder.enabled = false;
     }
 
@@ -64,5 +65,6 @@ public partial class MagicFire : MonoBehaviour  //Function Field
     private IEnumerator DeleteTime()
     {
         yield return new WaitForSeconds(deleteTime);
+        Deactive();
     }
 }
