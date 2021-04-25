@@ -4,11 +4,11 @@ using UnityEngine;
 using Anvil;
 using UnityEngine.Events;
 
-public partial class Player : MonoBehaviour  //Data Field
+public partial class Enermy : MonoBehaviour  //Data Field
 { 
     //마우스의 위치에 따라 캐릭터를 좌 우로 방향을 변경해준다
     private enum Direction { Left, Right }
-    private Direction playerDirection = Direction.Left;
+    private Direction enermyDirection = Direction.Left;
     public bool isDie { get; private set; } = false;
     private bool isDrag = false;
     private bool isMagicReady = false;
@@ -18,11 +18,13 @@ public partial class Player : MonoBehaviour  //Data Field
     public Rigidbody2D rig { get; private set; }
 
     [SerializeField]
-    private Transform playerbodyTransform;
+    private Transform fireGuideTransform;
     [SerializeField]
-    private Transform playerArmTransform;
+    private Transform enermybodyTransform;
     [SerializeField]
-    private Transform playerHandTransform;
+    private Transform enermyArmTransform;
+    [SerializeField]
+    private Transform enermyHandTransform;
     [SerializeField]
     private GameObject magicHandEffect;
     [SerializeField]
@@ -35,7 +37,7 @@ public partial class Player : MonoBehaviour  //Data Field
     private UnityEvent hitEvent;
 }
 
-public partial class Player : MonoBehaviour  //Main Function Field
+public partial class Enermy : MonoBehaviour  //Main Function Field
 {
     private void Start()
     {
@@ -44,42 +46,35 @@ public partial class Player : MonoBehaviour  //Main Function Field
     }
     private void Update()
     {
-        if (isDie || magicFire.isActive || MainSystem.Instance.SceneManager.GameScene.isNonPlayerControll)
+        if (isDie || magicFire.isActive)
             return;
-        
+
         if(isDrag)
             Charge();
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            LeftClickUp();
-            return;
-        }     
-
-        if (Input.GetMouseButtonDown(0))
-            LeftClickDown();
-
-        PlayerBodyDirection();
+        EnermyBodyDirection();
 
         if(isDrag)
-            PlayerArmRotation();
+            EnermyArmRotation();
     }
 }
 
-public partial class Player : MonoBehaviour  //Property Function Field
+public partial class Enermy : MonoBehaviour  //Property Function Field
 {
     public void Hit()
     {
         isDie = true;
         hitEvent?.Invoke();
     }
+
     private void Charge()
     {
         deltaTime += Time.deltaTime;
 
-        if(deltaTime > 1.0f)
+        if(deltaTime > 3.0f)
         {
             isMagicReady = true;
+            AttackFire();
         }
 
         if (chargyEnergy > 1)
@@ -91,7 +86,7 @@ public partial class Player : MonoBehaviour  //Property Function Field
             chargyEnergy += Time.deltaTime * 0.3f;
         }
     }
-    private void LeftClickUp()
+    private void AttackFire()
     {
         if (isMagicReady)
         {
@@ -103,10 +98,10 @@ public partial class Player : MonoBehaviour  //Property Function Field
 
         magicHandEffect.SetActive(false);
         isDrag = false;
-        playerArmTransform.localRotation = Quaternion.Euler(-22.18f, -78.648f, -10.948f);
+        enermyArmTransform.localRotation = Quaternion.Euler(-22.18f, -78.648f, -10.948f);
     }
 
-    private void LeftClickDown()
+    public void AttackStart()
     {
         isMagicReady = false;
         deltaTime = 0;
@@ -115,46 +110,46 @@ public partial class Player : MonoBehaviour  //Property Function Field
         isDrag = true;
     }
 
-    private void PlayerArmRotation()
+    private void EnermyArmRotation()
     {
-        Vector3 pos = Camera.main.WorldToScreenPoint(playerArmTransform.position);
-        Vector3 dir = Input.mousePosition - pos;
+        Vector3 pos = enermyArmTransform.position;
+        Vector3 dir = fireGuideTransform.position - pos;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        playerArmTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        enermyArmTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        switch (playerDirection)
+        switch (enermyDirection)
         {
-            case Direction.Left: playerArmTransform.Rotate(new Vector3(0, 0f, 10f));  break;
-            case Direction.Right: playerArmTransform.Rotate(new Vector3(180f, 0f, 10f)); break;
+            case Direction.Left: enermyArmTransform.Rotate(new Vector3(0, 0f, 10f));  break;
+            case Direction.Right: enermyArmTransform.Rotate(new Vector3(180f, 0f, 10f)); break;
         }
     }
 
-    private void PlayerBodyDirection()
+    private void EnermyBodyDirection()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 firePosition = fireGuideTransform.position;
 
-        switch (playerDirection)
+        switch (enermyDirection)
         {
             case Direction.Left:
-                if (mousePosition.x > playerbodyTransform.position.x)
+                if (firePosition.x > enermybodyTransform.position.x)
                 {
-                    playerDirection = Direction.Right;
-                    playerbodyTransform.localRotation = Quaternion.Euler(0, 120, 0);
+                    enermyDirection = Direction.Right;
+                    enermybodyTransform.localRotation = Quaternion.Euler(0, 120, 0);
                 }
                 break;
 
             case Direction.Right:
-                if (mousePosition.x < playerbodyTransform.position.x)
+                if (firePosition.x < enermybodyTransform.position.x)
                 {
-                    playerDirection = Direction.Left;
-                    playerbodyTransform.localRotation = Quaternion.Euler(0, 240, 0);
+                    enermyDirection = Direction.Left;
+                    enermybodyTransform.localRotation = Quaternion.Euler(0, 240, 0);
                 }
                 break;
         }
 
     }
 }
-public partial class Player : MonoBehaviour  //Coroutine Function Field
+public partial class Enermy : MonoBehaviour  //Coroutine Function Field
 {
     private IEnumerator UpdateCoroutine()
     {
@@ -164,7 +159,7 @@ public partial class Player : MonoBehaviour  //Coroutine Function Field
             if (isDrag == true)
             {
                 float randomHandRotation = Random.Range(-maxHandRotation, maxHandRotation);
-                playerHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation * chargyEnergy);
+                enermyHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation * chargyEnergy);
             }
         }
     }

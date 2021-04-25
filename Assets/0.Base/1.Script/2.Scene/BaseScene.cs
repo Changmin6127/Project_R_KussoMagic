@@ -14,10 +14,6 @@
 
     public partial class BaseScene : MonoBehaviour  //Function Field
     {
-        public void Start()
-        {
-            MainSystem.Instance.SceneManager.SignupCurrentScene(this);
-        }
         public virtual void Initialize()
         {
             sceneStartEvent?.Invoke();

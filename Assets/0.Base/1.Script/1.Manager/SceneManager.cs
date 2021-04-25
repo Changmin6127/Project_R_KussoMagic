@@ -4,7 +4,8 @@
 
     public partial class SceneManager : MonoBehaviour //Data Field
     {
-        public BaseScene CurrentScene { get; private set; }
+        public LobbyScene LobbyScene { get; private set; }
+        public GameScene GameScene { get; private set; }
     }
     public partial class SceneManager : MonoBehaviour //Initialize Function Field
     {
@@ -13,10 +14,16 @@
 
         }
 
-        public void SignupCurrentScene(BaseScene currentScene)
+        public void SignupLobbyScene(LobbyScene _lobbyScene)
         {
-            CurrentScene = currentScene;
-            CurrentScene.Initialize();
+            LobbyScene = _lobbyScene;
+            LobbyScene.Initialize();
+        }
+
+        public void SignupGameScene(GameScene _gameScene)
+        {
+            GameScene = _gameScene;
+            GameScene.Initialize();
         }
     }
 }

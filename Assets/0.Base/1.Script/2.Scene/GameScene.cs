@@ -2,26 +2,22 @@
 {
     using System.Collections.Generic;
 
-    public partial class LobbyScene : BaseScene  //Data Field
+    public partial class GameScene : BaseScene  //Data Field
     {
+        public bool isNonPlayerControll { get; set; } = false;
         private Dictionary<string, int> poolingNames = new Dictionary<string, int>();
         private List<ObjectPooling> objectPoolings = new List<ObjectPooling>();
     }
 
-    public partial class LobbyScene : BaseScene  //Main Function Field
+    public partial class GameScene : BaseScene  //Main Function Field
     {
-
         private void Start()
         {
-            MainSystem.Instance.SceneManager.SignupLobbyScene(this);
-        }
-        private void Update()
-        {
-
+            MainSystem.Instance.SceneManager.SignupGameScene(this);
         }
     }
 
-    public partial class LobbyScene : BaseScene  //Property Function Field
+    public partial class GameScene : BaseScene  //Property Function Field
     {
         public override void Initialize()
         {
@@ -39,7 +35,7 @@
         }
     }
 
-    public partial class LobbyScene : BaseScene  //Get Set Function Field
+    public partial class GameScene : BaseScene  //Get Set Function Field
     {
         public ObjectPooling GetObjectPooling(string name)
         {
