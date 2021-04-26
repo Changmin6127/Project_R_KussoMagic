@@ -34,6 +34,8 @@ public partial class Enermy : MonoBehaviour  //Data Field
     [SerializeField]
     private Transform magicGuideDestination;
     [SerializeField]
+    private ParticleSystem explosionParticle;
+    [SerializeField]
     private UnityEvent hitEvent;
 }
 
@@ -65,6 +67,8 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
     {
         isDie = true;
         hitEvent?.Invoke();
+        explosionParticle.transform.position = transform.position;
+        explosionParticle.Play(true);
     }
 
     private void Charge()

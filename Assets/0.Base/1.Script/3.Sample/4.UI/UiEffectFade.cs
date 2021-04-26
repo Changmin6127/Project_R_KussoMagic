@@ -11,6 +11,7 @@
         private bool active = false;
         private float deltaTime = 0;
         private float animationCurveEndTime = 0;
+        private Color prevStart = Color.white;
         private Color prevDestination = Color.white;
 
         [SerializeField]
@@ -28,7 +29,6 @@
         private void Start()
         {
             animationCurveEndTime = animationCurve[animationCurve.length - 1].time;
-            thisImage.enabled = false;
             thisImage.color = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, 0);
             if (isStart)
                 Active();
@@ -44,8 +44,8 @@
         {
             base.Active();
             active = true;
-            thisImage.enabled = true;
-            prevDestination = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, 1);
+            prevStart = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, animationCurve.Evaluate(0));
+            prevDestination = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, animationCurve.Evaluate(animationCurveEndTime));
             deltaTime = 0;
             isPerformance = true;
         }
@@ -54,7 +54,8 @@
         {
             base.Finish();
             active = false;
-            prevDestination = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, 0);
+            prevStart = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, animationCurve.Evaluate(animationCurveEndTime));
+            prevDestination = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, animationCurve.Evaluate(0));
             deltaTime = 0;
             isPerformance = true;
         }
@@ -63,7 +64,8 @@
         {
             deltaTime += Time.deltaTime * speed;
 
-            thisImage.color = Color.Lerp(thisImage.color, prevDestination, animationCurve.Evaluate(deltaTime));
+            thisImage.color = Color.Lerp(prevStart, prevDestination, animationCurve.Evaluate(deltaTime));
+
             if (active)
             {
                 if (deltaTime > animationCurveEndTime)
@@ -74,11 +76,10 @@
             }
             else
             {
-                if (deltaTime > animationCurveEndTime * 0.6f)
+                if (deltaTime > animationCurveEndTime)
                 {
                     isPerformance = false;
                     deltaTime = 0;
-                    thisImage.enabled = false;
                 }
             }
 

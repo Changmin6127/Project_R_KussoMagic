@@ -32,6 +32,8 @@ public partial class Player : MonoBehaviour  //Data Field
     [SerializeField]
     private Transform magicGuideDestination;
     [SerializeField]
+    private ParticleSystem explosionParticle;
+    [SerializeField]
     private UnityEvent hitEvent;
 }
 
@@ -72,6 +74,8 @@ public partial class Player : MonoBehaviour  //Property Function Field
     {
         isDie = true;
         hitEvent?.Invoke();
+        explosionParticle.transform.position = transform.position;
+        explosionParticle.Play(true);
     }
     private void Charge()
     {

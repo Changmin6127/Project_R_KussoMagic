@@ -1,0 +1,663 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.928; Version 2004; 64bit' Language: 'ko' Physical Memory: 16341 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\UnityEdit\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityProject/Project_R_KussoMagic
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51516
+Successfully changed project path to: D:/UnityProject/Project_R_KussoMagic
+D:/UnityProject/Project_R_KussoMagic
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 101.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path D:/UnityEdit/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProject/Project_R_KussoMagic/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   
+    VRAM:     8088 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'D:/UnityEdit/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityEdit/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/UnityEdit/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityEdit/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001347 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 101.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.303 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002665 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1425 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.8 MB.
+System memory in use after: 99.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1891.
+Total: 3.676600 ms (FindLiveObjects: 0.567700 ms CreateObjectMapping: 0.291100 ms MarkObjects: 2.643500 ms  DeleteObjects: 0.171900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Modern UI Pack
+  artifactKey: Guid(674dab9eaad620047803cfe207ed1a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modern UI Pack using Guid(674dab9eaad620047803cfe207ed1a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a83b8e8ced905f6209a780d829af4e') in 0.033745 seconds
+  Import took 0.037546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.011782 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Bravery
+  artifactKey: Guid(5770ba10cf98dd5499bc730f2cac8b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Bravery using Guid(5770ba10cf98dd5499bc730f2cac8b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15953b6fb49771ccb8c566a90719005d') in 0.008591 seconds
+  Import took 0.012285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.245494 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Earthquake
+  artifactKey: Guid(41b63fc0ce330a949a4e4a1bbac5dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Earthquake using Guid(41b63fc0ce330a949a4e4a1bbac5dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c2865ade51cab861a540369861a7f0') in 0.008875 seconds
+  Import took 0.027267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.380707 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Electric
+  artifactKey: Guid(b77a3534299c1cd4caa05078ab5d4ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Electric using Guid(b77a3534299c1cd4caa05078ab5d4ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16648eb537d34b615fa53c4a04e431d9') in 0.008133 seconds
+  Import took 0.017968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.185879 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear
+  artifactKey: Guid(7bc7415ae6210f743b3f080596655a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear using Guid(7bc7415ae6210f743b3f080596655a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5a7c1b58de52d402a13b9a8b8aca6f') in 0.007813 seconds
+  Import took 0.011760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.807488 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 1.mp3
+  artifactKey: Guid(94542625d50e16f44a30bb7ba5242645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 1.mp3 using Guid(94542625d50e16f44a30bb7ba5242645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97aebe63b52de65c0e9e78ea4039b72c') in 0.311944 seconds
+  Import took 0.315422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883315 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 2.mp3
+  artifactKey: Guid(f4a5d71fdc4ecbb4f9f25e61b3bb55da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 2.mp3 using Guid(f4a5d71fdc4ecbb4f9f25e61b3bb55da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60efd7348490e7f9de6d02996ef36019') in 0.031091 seconds
+  Import took 0.035107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 2.mp3
+  artifactKey: Guid(f4a5d71fdc4ecbb4f9f25e61b3bb55da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 2.mp3 using Guid(f4a5d71fdc4ecbb4f9f25e61b3bb55da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60efd7348490e7f9de6d02996ef36019') in 0.014448 seconds
+  Import took 0.019081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.317626 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 3.mp3
+  artifactKey: Guid(c18eaf11fb3248641a394e6f7d2c36c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 3.mp3 using Guid(c18eaf11fb3248641a394e6f7d2c36c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b726127c035a90e7e8c1e1c6681e8966') in 0.014659 seconds
+  Import took 0.018936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001929 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 3.mp3
+  artifactKey: Guid(c18eaf11fb3248641a394e6f7d2c36c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 3.mp3 using Guid(c18eaf11fb3248641a394e6f7d2c36c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b726127c035a90e7e8c1e1c6681e8966') in 0.009769 seconds
+  Import took 0.014500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.058281 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 4.mp3
+  artifactKey: Guid(ceb4f539218bc324c9f71aa43da89eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 4.mp3 using Guid(ceb4f539218bc324c9f71aa43da89eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb2d5869d80d863f355c1427f0b892f') in 0.015610 seconds
+  Import took 0.034335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002088 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 4.mp3
+  artifactKey: Guid(ceb4f539218bc324c9f71aa43da89eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 4.mp3 using Guid(ceb4f539218bc324c9f71aa43da89eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb2d5869d80d863f355c1427f0b892f') in 0.010387 seconds
+  Import took 0.014312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.424577 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 5.mp3
+  artifactKey: Guid(5efac2338d8bd3141b09de0f1b296a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 5.mp3 using Guid(5efac2338d8bd3141b09de0f1b296a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058efb9488233fe559476908539429aa') in 0.016581 seconds
+  Import took 0.020425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004555 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 5.mp3
+  artifactKey: Guid(5efac2338d8bd3141b09de0f1b296a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 5.mp3 using Guid(5efac2338d8bd3141b09de0f1b296a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058efb9488233fe559476908539429aa') in 0.021905 seconds
+  Import took 0.025346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.791987 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 6.mp3
+  artifactKey: Guid(b6dab8377b9c6184c8959e10555790d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 6.mp3 using Guid(b6dab8377b9c6184c8959e10555790d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560fa70504e25ec3f7df5232860ae38a') in 0.011522 seconds
+  Import took 0.015628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002429 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 6.mp3
+  artifactKey: Guid(b6dab8377b9c6184c8959e10555790d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 6.mp3 using Guid(b6dab8377b9c6184c8959e10555790d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560fa70504e25ec3f7df5232860ae38a') in 0.007481 seconds
+  Import took 0.012022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.891936 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 7.mp3
+  artifactKey: Guid(fecb34f051792764ea81c5afcd65e694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 7.mp3 using Guid(fecb34f051792764ea81c5afcd65e694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c6da01b7360df6df5ee6b3fb04209b') in 0.014666 seconds
+  Import took 0.017834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.826023 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 8.mp3
+  artifactKey: Guid(82e0299102695b944822248f81ea5bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 8.mp3 using Guid(82e0299102695b944822248f81ea5bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2709b3fcd8e984861eef7d4a7d8b4363') in 0.042856 seconds
+  Import took 0.046416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003505 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 8.mp3
+  artifactKey: Guid(82e0299102695b944822248f81ea5bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 8.mp3 using Guid(82e0299102695b944822248f81ea5bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2709b3fcd8e984861eef7d4a7d8b4363') in 0.007718 seconds
+  Import took 0.012290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.735080 seconds.
+  path: Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 9.mp3
+  artifactKey: Guid(6cfb081072c19754a92dd23abaaaa359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Magic Spells SFX Bundle/Mono/Fear/Fear 9.mp3 using Guid(6cfb081072c19754a92dd23abaaaa359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392979737027a99a79daefc476353b31') in 0.012519 seconds
+  Import took 0.015630 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.4 MB.
+System memory in use after: 70.5 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1900.
+Total: 3.159100 ms (FindLiveObjects: 0.271200 ms CreateObjectMapping: 0.074700 ms MarkObjects: 2.795300 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2825.715296 seconds.
+  path: Assets/CHERRY BLOSSOM
+  artifactKey: Guid(9a19bcedf854a9d40902523393b61dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM using Guid(9a19bcedf854a9d40902523393b61dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67cc760c3b2a86d668050bdf6fcd4f88') in 0.008486 seconds
+  Import took 0.020485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.131328 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND
+  artifactKey: Guid(9cac4df6544965d4ca04101f8182477b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND using Guid(9cac4df6544965d4ca04101f8182477b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced413fb29bad793c6b71834a6c43a0c') in 0.009798 seconds
+  Import took 0.035376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.776059 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON
+  artifactKey: Guid(c9b84faf22ce5384fa8673e93ae9a896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON using Guid(c9b84faf22ce5384fa8673e93ae9a896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca83404560b1343a589b96ff23f0ca1') in 0.012222 seconds
+  Import took 0.023110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.828874 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE
+  artifactKey: Guid(3b9e7987712b543428ecf46eb1e6036c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE using Guid(3b9e7987712b543428ecf46eb1e6036c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5879538e76cd72d8a283e85c2947b7') in 0.011470 seconds
+  Import took 0.043796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.380807 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/cherry_blossom.png
+  artifactKey: Guid(f753df1cf7fe2a1458d8d9e78ee58d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/cherry_blossom.png using Guid(f753df1cf7fe2a1458d8d9e78ee58d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2817f1bfab2290db56b26782f136a053') in 0.188840 seconds
+  Import took 0.204518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/halo_image.png
+  artifactKey: Guid(0f9edb5de47c9e54b8b309002bc45344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/halo_image.png using Guid(0f9edb5de47c9e54b8b309002bc45344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e82f4258192ef6460d3feb3ba2cdd3') in 0.037316 seconds
+  Import took 0.045568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.091784 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/halo_yellow_image.png
+  artifactKey: Guid(7467cfbd98f11b94ab1faf14d358b370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/halo_yellow_image.png using Guid(7467cfbd98f11b94ab1faf14d358b370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8568e2ae7654a3c92383bc69b609a369') in 0.017147 seconds
+  Import took 0.033606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.363550 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/item_0_image.png
+  artifactKey: Guid(615865e1eadedff4c9a89fdd9bcebe92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/item_0_image.png using Guid(615865e1eadedff4c9a89fdd9bcebe92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5d060da737f14ddf008790099cb9f6') in 0.030286 seconds
+  Import took 0.061711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.190440 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/item_1_image.png
+  artifactKey: Guid(012409bc87a4fe643a753c6787cc7ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/item_1_image.png using Guid(012409bc87a4fe643a753c6787cc7ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d7acda66422d1be45154066c5563e2b') in 0.019554 seconds
+  Import took 0.026965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.282754 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/line.png
+  artifactKey: Guid(f447f92aed94d4c40ba00df13f1cdb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/line.png using Guid(f447f92aed94d4c40ba00df13f1cdb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32694e4f5b5bdc888726900c28c07842') in 0.019029 seconds
+  Import took 0.047086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.222306 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/price_image.png
+  artifactKey: Guid(753a958ccc183034a82bd92d2ecd3fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/price_image.png using Guid(753a958ccc183034a82bd92d2ecd3fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d73f41924a6a09d9baff74f0f6a293') in 0.033480 seconds
+  Import took 0.063107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.521367 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/ribbon_1.png
+  artifactKey: Guid(231d1fe1a4d7008429ef56dbb8329988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/ribbon_1.png using Guid(231d1fe1a4d7008429ef56dbb8329988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ab460ebf07f83a62dc7e130e0a4f73') in 0.034734 seconds
+  Import took 0.049561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.192333 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/ribbon_2.png
+  artifactKey: Guid(000a82963f4c0534599bc896858d2b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/ribbon_2.png using Guid(000a82963f4c0534599bc896858d2b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358fd0d56b4e6af2f3baa1e8bc50991e') in 0.020081 seconds
+  Import took 0.032342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.329110 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/stage1_image.png
+  artifactKey: Guid(602c1cdb41d06fc4f975eacb1564bbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/stage1_image.png using Guid(602c1cdb41d06fc4f975eacb1564bbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3315a8e2e12de416c5488cf81108cf') in 0.018354 seconds
+  Import took 0.034645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.466569 seconds.
+  path: Assets/CHERRY BLOSSOM/3.IMAGE/stage_clear_image.png
+  artifactKey: Guid(c17ca1b7ef25bb446b1ca1373c1bccb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/3.IMAGE/stage_clear_image.png using Guid(c17ca1b7ef25bb446b1ca1373c1bccb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cfee1d86e21c39ae85a9c1126bf77f') in 0.025402 seconds
+  Import took 0.034718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.967552 seconds.
+  path: Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE
+  artifactKey: Guid(cdf8b0a9e29d13542aef573e4ddaf302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE using Guid(cdf8b0a9e29d13542aef573e4ddaf302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607d456c19817fb587e95898cda3c7af') in 0.012805 seconds
+  Import took 0.031186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.895989 seconds.
+  path: Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/0_image.png
+  artifactKey: Guid(8a08b9446b9d238468bf556c761f982c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/0_image.png using Guid(8a08b9446b9d238468bf556c761f982c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89d76029ea916226b596e4c0ec4e5c4') in 0.020148 seconds
+  Import took 0.025534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.248953 seconds.
+  path: Assets/_TerrainAutoUpgrade
+  artifactKey: Guid(3dad86db13371864c930c5022fb69781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_TerrainAutoUpgrade using Guid(3dad86db13371864c930c5022fb69781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c3e9587912909ad708a97eafc868ab') in 0.009287 seconds
+  Import took 0.028179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.229426 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/background_1.png
+  artifactKey: Guid(49d553fa6cd21ee46b37fd72f3f2e4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/background_1.png using Guid(49d553fa6cd21ee46b37fd72f3f2e4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf661ac1473518f30790e6f7563cd18') in 0.022336 seconds
+  Import took 0.046554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.477732 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/background_2.png
+  artifactKey: Guid(f559ee3896b268a4aa4316856438cb0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/background_2.png using Guid(f559ee3896b268a4aa4316856438cb0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35730968575d6515a7f64466ce085d28') in 0.020167 seconds
+  Import took 0.040622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.292671 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/buy_item_background_1.png
+  artifactKey: Guid(98dd0ae794610024582a27875f501f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/buy_item_background_1.png using Guid(98dd0ae794610024582a27875f501f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30090503e08bb49df360f53d67b9957') in 0.021330 seconds
+  Import took 0.038880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.468644 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/buy_item_background_2.png
+  artifactKey: Guid(1bc5a2787ad6f354bbce6352e4ade830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/buy_item_background_2.png using Guid(1bc5a2787ad6f354bbce6352e4ade830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3787b3eda9e0a9d696dcb8a09631d61f') in 0.021423 seconds
+  Import took 0.032808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.531297 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/check_background.png
+  artifactKey: Guid(8be320dfac56e264fbf765ae57aad9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/check_background.png using Guid(8be320dfac56e264fbf765ae57aad9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b8ec73412503829971165e33936c4a') in 0.017721 seconds
+  Import took 0.036769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.495678 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/cherry_background_1.png
+  artifactKey: Guid(9e236c0d6c18f454883adb7faebce3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/cherry_background_1.png using Guid(9e236c0d6c18f454883adb7faebce3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77fb1227b69fce6b8df262164130059e') in 0.024421 seconds
+  Import took 0.038145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.350853 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/cherry_background_2.png
+  artifactKey: Guid(fa65b4657f7c78047a911a3fb6793147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/cherry_background_2.png using Guid(fa65b4657f7c78047a911a3fb6793147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded618f606bce40a91b9da4c42b2fde5') in 0.021679 seconds
+  Import took 0.045552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.332871 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/resource_background.png
+  artifactKey: Guid(80e84707728083d448d1435b9c4982dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/resource_background.png using Guid(80e84707728083d448d1435b9c4982dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34074f85bfd4954fe1b1073e8dd079c') in 0.018361 seconds
+  Import took 0.032684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.378346 seconds.
+  path: Assets/CHERRY BLOSSOM/0.BACKGROUND/setting_background.png
+  artifactKey: Guid(d5c432ec3d0d0354d92c41b2b356c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/0.BACKGROUND/setting_background.png using Guid(d5c432ec3d0d0354d92c41b2b356c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bb9df1d9bcebfd7d146d80a68c1dba') in 0.019654 seconds
+  Import took 0.023548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.618424 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/gamecenter_button.png
+  artifactKey: Guid(4d7bccbdc49dd264a86ba1aca0327e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/gamecenter_button.png using Guid(4d7bccbdc49dd264a86ba1aca0327e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e030f1e771b896e838aea4109beb1b') in 0.017802 seconds
+  Import took 0.030450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.505171 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/gamestart_button.png
+  artifactKey: Guid(46713297d92b7d34ab296262e92c73a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/gamestart_button.png using Guid(46713297d92b7d34ab296262e92c73a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391231333ab508a76207bd31cf00289a') in 0.020522 seconds
+  Import took 0.026807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.479115 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/google_button.png
+  artifactKey: Guid(b6dfd156db9181847b77b8407f81e079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/google_button.png using Guid(b6dfd156db9181847b77b8407f81e079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e888008cde1c84cabb30fcf0d9192a8') in 0.021105 seconds
+  Import took 0.028808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027062 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/help_button.png
+  artifactKey: Guid(2953de5e41707eb45be55b5af62590ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/help_button.png using Guid(2953de5e41707eb45be55b5af62590ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa751689f76d954cbae6c8d315b7b19') in 0.021604 seconds
+  Import took 0.026017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043796 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/nextstage_button.png
+  artifactKey: Guid(ed01aeda72c3dbf4a849c7121d9d92a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/nextstage_button.png using Guid(ed01aeda72c3dbf4a849c7121d9d92a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c695cc0a77ffaef54ee685c134cdc9f') in 0.019473 seconds
+  Import took 0.031816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033683 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/OK_button.png
+  artifactKey: Guid(045e8172cacb5f64896b1a0460fbd5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/OK_button.png using Guid(045e8172cacb5f64896b1a0460fbd5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7338f79b2ec7a226863c0c45e3e63be7') in 0.019190 seconds
+  Import took 0.030220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015776 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/OK_button.png
+  artifactKey: Guid(045e8172cacb5f64896b1a0460fbd5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/OK_button.png using Guid(045e8172cacb5f64896b1a0460fbd5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7338f79b2ec7a226863c0c45e3e63be7') in 0.019452 seconds
+  Import took 0.024692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.232907 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/option_button.png
+  artifactKey: Guid(e48c3fca072d6494c93c91944d123064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/option_button.png using Guid(e48c3fca072d6494c93c91944d123064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a6863b7c917f51d52108f926f62017') in 0.026836 seconds
+  Import took 0.043237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.384110 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/quit_button.png
+  artifactKey: Guid(875246d71805e864da4b4842cf5f712d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/quit_button.png using Guid(875246d71805e864da4b4842cf5f712d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b6a25acacfa0e46c95f50afbe7ad09') in 0.023136 seconds
+  Import took 0.037877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.305080 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/restart_button.png
+  artifactKey: Guid(cde843bc2aee4864cbedfa9b97088c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/restart_button.png using Guid(cde843bc2aee4864cbedfa9b97088c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36f5f8a2c3d51b5e79bb6a1eb2cc381') in 0.019845 seconds
+  Import took 0.030981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.237544 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/resume_button.png
+  artifactKey: Guid(87201cea37dbf6e4d9bdad42fe5b3db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/resume_button.png using Guid(87201cea37dbf6e4d9bdad42fe5b3db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3cee0634c8206fc356b2a0a3a9732a') in 0.016987 seconds
+  Import took 0.022458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.252365 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/round_button.png
+  artifactKey: Guid(f1c75b771953d094facab0b204c89c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/round_button.png using Guid(f1c75b771953d094facab0b204c89c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df4bae14000007ad712bca5ffc069d1') in 0.019612 seconds
+  Import took 0.032820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.271874 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/setting_button.png
+  artifactKey: Guid(fecaaae31f035744f9d27d1f4413152a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/setting_button.png using Guid(fecaaae31f035744f9d27d1f4413152a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f2368cb3200ce64dc825f57ebfeaa1') in 0.018472 seconds
+  Import took 0.029874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.261903 seconds.
+  path: Assets/CHERRY BLOSSOM/1.BUTTON/X_button.png
+  artifactKey: Guid(12ec4d6cf0d2dad41b0971a779f710b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/1.BUTTON/X_button.png using Guid(12ec4d6cf0d2dad41b0971a779f710b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f498dd5d862bcbfabce1d150ee534072') in 0.019451 seconds
+  Import took 0.039992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.226078 seconds.
+  path: Assets/CHERRY BLOSSOM/2.ICON
+  artifactKey: Guid(69bdf1b61f1a3a2428fe42e9793abc4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/2.ICON using Guid(69bdf1b61f1a3a2428fe42e9793abc4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d3764b1e7f7263999c4b21c6724c96') in 0.011803 seconds
+  Import took 0.016059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.488106 seconds.
+  path: Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/2_image.png
+  artifactKey: Guid(2741d184c9aea4443b64e14ccd7da25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/2_image.png using Guid(2741d184c9aea4443b64e14ccd7da25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91018370df0c933bf09fc9842ff99fe2') in 0.016552 seconds
+  Import took 0.036321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.796385 seconds.
+  path: Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/9_image.png
+  artifactKey: Guid(a32594fc83314da458000257ca6673f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/9_image.png using Guid(a32594fc83314da458000257ca6673f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d87e12671bf1583ef6104de9039ed43') in 0.018901 seconds
+  Import took 0.026940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001090 seconds.
+  path: Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/9_image.png
+  artifactKey: Guid(a32594fc83314da458000257ca6673f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/9_image.png using Guid(a32594fc83314da458000257ca6673f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d87e12671bf1583ef6104de9039ed43') in 0.016568 seconds
+  Import took 0.026894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.576868 seconds.
+  path: Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/STAGE_image.png
+  artifactKey: Guid(1c6dd8244e5ac5c478f9ccd383fe2ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/4.NUMBER_IMAGE/STAGE_image.png using Guid(1c6dd8244e5ac5c478f9ccd383fe2ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bb0cb4701f68dc324a6cc29d7fb954') in 0.027638 seconds
+  Import took 0.038008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.460919 seconds.
+  path: Assets/CHERRY BLOSSOM/Sample Scenes
+  artifactKey: Guid(4f704ae4b4f98ae41a0bce26658850c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/Sample Scenes using Guid(4f704ae4b4f98ae41a0bce26658850c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5154e4f8c6a8a37d8714c6188480aa') in 0.010984 seconds
+  Import took 0.023128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.384777 seconds.
+  path: Assets/CHERRY BLOSSOM/Sample Scenes/buy_item_scene.unity
+  artifactKey: Guid(79bb252c38d86aa42a8c939dd6498c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CHERRY BLOSSOM/Sample Scenes/buy_item_scene.unity using Guid(79bb252c38d86aa42a8c939dd6498c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362aedd1fbfd8ea5a86e8d4369103dd9') in 0.010531 seconds
+  Import took 0.033033 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002402 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.611 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1367 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.8 MB.
+System memory in use after: 97.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1952.
+Total: 3.740600 ms (FindLiveObjects: 0.253100 ms CreateObjectMapping: 0.072400 ms MarkObjects: 3.385600 ms  DeleteObjects: 0.027800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002927 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.251 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1367 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.8 MB.
+System memory in use after: 97.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1955.
+Total: 2.881200 ms (FindLiveObjects: 0.696600 ms CreateObjectMapping: 0.198500 ms MarkObjects: 1.964200 ms  DeleteObjects: 0.019400 ms)
+
