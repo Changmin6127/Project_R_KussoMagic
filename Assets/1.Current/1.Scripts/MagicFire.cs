@@ -9,6 +9,8 @@ public partial class MagicFire : MonoBehaviour  //Date Field
     private int hitCount = 0;
     private float addForce = 2000f;
 
+    public bool isPlayerMagic = false;
+
     [SerializeField]
     private int endHitCount = 5;
     [SerializeField]

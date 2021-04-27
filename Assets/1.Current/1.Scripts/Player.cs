@@ -72,6 +72,7 @@ public partial class Player : MonoBehaviour  //Property Function Field
 {
     public void Hit()
     {
+        MainSystem.Instance.SceneManager.GameScene.isNonPlayerControll = true;
         isDie = true;
         hitEvent?.Invoke();
         explosionParticle.transform.position = transform.position;
