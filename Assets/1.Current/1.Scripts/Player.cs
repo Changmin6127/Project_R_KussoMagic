@@ -14,7 +14,7 @@ public partial class Player : MonoBehaviour  //Data Field
     private bool isMagicReady = false;
     private float deltaTime = 0;
     private float chargyEnergy = 0;
-    private float maxHandRotation = 30;
+    private float maxHandRotation = 20;
     public Rigidbody2D rig { get; private set; }
 
     [SerializeField]
@@ -129,8 +129,8 @@ public partial class Player : MonoBehaviour  //Property Function Field
 
         switch (playerDirection)
         {
-            case Direction.Left: playerArmTransform.Rotate(new Vector3(0, 0f, 10f));  break;
-            case Direction.Right: playerArmTransform.Rotate(new Vector3(180f, 0f, 10f)); break;
+            case Direction.Left: playerArmTransform.Rotate(new Vector3(0, 0f, 13f));  break;
+            case Direction.Right: playerArmTransform.Rotate(new Vector3(180f, 0f, 13f)); break;
         }
     }
 
