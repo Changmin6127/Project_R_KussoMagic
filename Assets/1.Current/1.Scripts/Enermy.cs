@@ -113,6 +113,8 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
         chargyEnergy = 0;
         magicHandEffect.SetActive(true);
         isDrag = true;
+
+        DirectionInitialize();
     }
 
     private void EnermyArmRotation()
@@ -124,11 +126,18 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
 
         switch (enermyDirection)
         {
-            case Direction.Left: enermyArmTransform.Rotate(new Vector3(0, 0f, 10f));  break;
-            case Direction.Right: enermyArmTransform.Rotate(new Vector3(180f, 0f, 10f)); break;
+            case Direction.Left: enermyArmTransform.Rotate(new Vector3(0, 0f, 13f));  break;
+            case Direction.Right: enermyArmTransform.Rotate(new Vector3(180f, 0f, 13f)); break;
         }
     }
 
+    public void DirectionInitialize()
+    {
+        if (enermybodyTransform.position.x > fireGuideTransform.position.x)
+            enermyDirection = Direction.Right;
+        else
+            enermyDirection = Direction.Left;
+    }
     private void EnermyBodyDirection()
     {
         Vector3 firePosition = fireGuideTransform.position;
@@ -164,6 +173,7 @@ public partial class Enermy : MonoBehaviour  //Coroutine Function Field
             if (isDrag == true)
             {
                 float randomHandRotation = Random.Range(-maxHandRotation, maxHandRotation);
+                randomHandRotation = 0;
                 enermyHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation * chargyEnergy);
             }
         }
