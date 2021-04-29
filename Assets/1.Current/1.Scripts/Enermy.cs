@@ -14,9 +14,15 @@ public partial class Enermy : MonoBehaviour  //Data Field
     private bool isMagicReady = false;
     private float deltaTime = 0;
     private float chargyEnergy = 0;
-    private float maxHandRotation = 30;
     public Rigidbody2D rig { get; private set; }
+    public EnermyManager enermyManager { get; set; }
 
+    [SerializeField]
+    private float attackTimeMin = 0.0f;
+    [SerializeField]
+    private float attackTimeMax = 1.0f;
+    [SerializeField]
+    private float maxHandRotation = 0;
     [SerializeField]
     private Transform fireGuideTransform;
     [SerializeField]
@@ -65,7 +71,19 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
 {
     public void Hit()
     {
-        MainSystem.Instance.SceneManager.GameScene.isNonPlayerControll = true;
+        if (isDie)
+            return;
+
+        if(enermyManager != null)
+        {
+            enermyManager.DieCountUp();
+        }
+        else
+        {
+            MainSystem.Instance.SceneManager.GameScene.isNonPlayerControll = true;
+        }
+
+
         isDie = true;
         hitEvent?.Invoke();
         explosionParticle.transform.position = transform.position;
@@ -173,7 +191,6 @@ public partial class Enermy : MonoBehaviour  //Coroutine Function Field
             if (isDrag == true)
             {
                 float randomHandRotation = Random.Range(-maxHandRotation, maxHandRotation);
-                randomHandRotation = 0;
                 enermyHandTransform.localRotation = Quaternion.Euler(-50.692f, -12.437f, randomHandRotation * chargyEnergy);
             }
         }

@@ -72,6 +72,10 @@ public partial class MagicFire : MonoBehaviour  //Function Field
         {
             _player.rig.constraints = RigidbodyConstraints2D.None;
             Deactive();
+
+            if (_player.isDie)
+                return;
+
             Vector2 dir = Vector2.zero;
             if (_player.transform.position.x > transform.position.x)
                 dir = new Vector2(1, 1);
@@ -91,6 +95,10 @@ public partial class MagicFire : MonoBehaviour  //Function Field
         {
             _enermy.rig.constraints = RigidbodyConstraints2D.None;
             Deactive();
+
+            if (_enermy.isDie)
+                return;
+
             Vector2 dir = Vector2.zero;
             if (_enermy.transform.position.x > transform.position.x)
                 dir = new Vector2(1, 1);
