@@ -93,7 +93,7 @@ public partial class Player : MonoBehaviour  //Property Function Field
         }
         else
         {
-            chargyEnergy += Time.deltaTime * 0.3f;
+            chargyEnergy += Time.deltaTime * 0.2f;
         }
     }
     private void LeftClickUp()
@@ -165,7 +165,7 @@ public partial class Player : MonoBehaviour  //Coroutine Function Field
     {
         while (isDie == false)
         {
-            yield return MainSystem.Instance.CoroutineManager.WaitForSecond(0.05f);
+            yield return MainSystem.Instance.CoroutineManager.WaitForSecond(0.07f);
             if (isDrag == true)
             {
                 float randomHandRotation = Random.Range(-maxHandRotation, maxHandRotation);
