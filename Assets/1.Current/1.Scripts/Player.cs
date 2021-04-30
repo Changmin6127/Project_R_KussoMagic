@@ -72,11 +72,21 @@ public partial class Player : MonoBehaviour  //Property Function Field
 {
     public void Hit()
     {
+        if (isDie)
+            return;
+
+        AttackNonFire();
         MainSystem.Instance.SceneManager.GameScene.isNonPlayerControll = true;
         isDie = true;
         hitEvent?.Invoke();
         explosionParticle.transform.position = transform.position;
         explosionParticle.Play(true);
+    }
+    public void AttackNonFire()
+    {
+        magicHandEffect.SetActive(false);
+        isDrag = false;
+        playerArmTransform.localRotation = Quaternion.Euler(-22.18f, -78.648f, -10.948f);
     }
     private void Charge()
     {
@@ -118,8 +128,17 @@ public partial class Player : MonoBehaviour  //Property Function Field
         chargyEnergy = 0;
         magicHandEffect.SetActive(true);
         isDrag = true;
+        DirectionInitialize();
     }
+    public void DirectionInitialize()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
+        if (playerbodyTransform.position.x > mousePosition.x)
+            playerDirection = Direction.Right;
+        else
+            playerDirection = Direction.Left;
+    }
     private void PlayerArmRotation()
     {
         Vector3 pos = Camera.main.WorldToScreenPoint(playerArmTransform.position);

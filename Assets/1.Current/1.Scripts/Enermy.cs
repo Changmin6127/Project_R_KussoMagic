@@ -14,9 +14,14 @@ public partial class Enermy : MonoBehaviour  //Data Field
     private bool isMagicReady = false;
     private float deltaTime = 0;
     private float chargyEnergy = 0;
+    private bool isAttackDelay = false;
+    private float attackDeltaTime = 0;
+    private float attackDelayMaxtime = 0;
     public Rigidbody2D rig { get; private set; }
     public EnermyManager enermyManager { get; set; }
 
+    [SerializeField]
+    private bool attacker = false;
     [SerializeField]
     private float attackTimeMin = 0.0f;
     [SerializeField]
@@ -51,6 +56,10 @@ public partial class Enermy : MonoBehaviour  //Main Function Field
     {
         rig = GetComponent<Rigidbody2D>();
         StartCoroutine(UpdateCoroutine());
+        if (attacker)
+        {
+            Attack();
+        }
     }
     private void Update()
     {
@@ -64,6 +73,9 @@ public partial class Enermy : MonoBehaviour  //Main Function Field
 
         if(isDrag)
             EnermyArmRotation();
+
+        if (isAttackDelay)
+            AttackDealy();
     }
 }
 
@@ -74,7 +86,9 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
         if (isDie)
             return;
 
-        if(enermyManager != null)
+        AttackNonFire();
+
+        if (enermyManager != null)
         {
             enermyManager.DieCountUp();
         }
@@ -83,11 +97,30 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
             MainSystem.Instance.SceneManager.GameScene.isNonPlayerControll = true;
         }
 
-
         isDie = true;
         hitEvent?.Invoke();
         explosionParticle.transform.position = transform.position;
         explosionParticle.Play(true);
+    }
+
+    private void AttackDealy()
+    {
+        attackDeltaTime += Time.deltaTime;
+
+        if (attackDeltaTime > attackDelayMaxtime)
+        {
+            isAttackDelay = false;
+            Attack();
+            AttackStart();
+        }
+    }
+
+    private void Attack()
+    {
+        float randomTime = Random.Range(attackTimeMin, attackTimeMax);
+        attackDelayMaxtime = randomTime;
+        attackDeltaTime = 0;
+        isAttackDelay = true;
     }
 
     private void Charge()
@@ -123,7 +156,12 @@ public partial class Enermy : MonoBehaviour  //Property Function Field
         isDrag = false;
         enermyArmTransform.localRotation = Quaternion.Euler(-22.18f, -78.648f, -10.948f);
     }
-
+    private void AttackNonFire()
+    {
+        magicHandEffect.SetActive(false);
+        isDrag = false;
+        enermyArmTransform.localRotation = Quaternion.Euler(-22.18f, -78.648f, -10.948f);
+    }
     public void AttackStart()
     {
         isMagicReady = false;
